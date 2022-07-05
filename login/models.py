@@ -8,5 +8,8 @@ class Users(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    #mobile_no = models.CharField(max_length=255)
+
+
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
